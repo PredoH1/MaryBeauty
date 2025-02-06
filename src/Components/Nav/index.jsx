@@ -2,7 +2,13 @@ import { Link } from "react-router-dom";
 import style from "../../Components/Nav/Nav.module.css";
 import iconNav from "../../assets/iconNav.png";
 
-function Nav() {
+function Nav({ sobreRef }) {
+  function handleScroll() {
+    if (sobreRef.current) {
+      sobreRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <nav>
       <div className={style.logo}>
@@ -18,8 +24,8 @@ function Nav() {
         <Link to="/">
           <button>Home</button>
         </Link>
-        <a href="#">
-          <button>Sobre</button>
+        <a>
+          <button onClick={handleScroll}>Sobre</button>
         </a>
         <a href="#">
           <button>Catalogo</button>

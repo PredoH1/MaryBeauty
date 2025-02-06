@@ -1,5 +1,4 @@
 import style from "../../Components/Header/Header.module.css";
-import Nav from "../../Components/Nav/index";
 import imgHeader from "../../assets/imgHeader.png";
 import React, { useEffect, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
@@ -28,8 +27,7 @@ function Header() {
   }, []);
 
   return (
-    <section>
-      <Nav />
+    <section className={style.mainSection}>
       <section className={style.sectionInfo}>
         <div className={style.infoText}>
           <h2 ref={titleRef} className={style.titleText}>
