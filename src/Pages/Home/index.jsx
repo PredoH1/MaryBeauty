@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header/index";
+import Sobre from "../../Components/Sobre";
 
 function Home() {
   return (
     <div>
       <Header />
-      <h1>oi</h1>
+      <Sobre />
     </div>
   );
 }

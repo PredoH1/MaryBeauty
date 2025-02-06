@@ -1,3 +1,47 @@
-.header {
-  color: aqua;
+section {
+  background-color: #fdcbca;
+  padding-bottom: 3rem;
+}
+
+.sectionInfo {
+  display: flex;
+  margin: 7rem 0rem 0rem 0rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.infoText {
+  width: 45%;
+  height: 100%;
+}
+
+.titleText {
+  font-family: "Oleo Script", serif;
+  width: 75%;
+  color: #d4af37;
+  font-size: 3rem;
+  margin: 0rem 0rem 1.6rem 0rem;
+}
+
+.infoParagraph {
+  font-family: "Ubuntu", serif;
+  font-size: 1.5rem;
+  color: #1d0e26;
+}
+
+.boxImg {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxImg img {
+  width: 40rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+
+  box-shadow: #3a1c4d96 5px 5px, #7a3c9b75 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    #4c157033 25px 25px;
 }

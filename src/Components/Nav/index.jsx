@@ -15,10 +15,18 @@ function Nav() {
       </div>
 
       <div className={style.links}>
-        <Link to="/">Home</Link>
-        <a href="#">Sobre</a>
-        <a href="#">Catalogo</a>
-        <Link to="/endereco">Endereco</Link>
+        <Link to="/">
+          <button>Home</button>
+        </Link>
+        <a href="#">
+          <button>Sobre</button>
+        </a>
+        <a href="#">
+          <button>Catalogo</button>
+        </a>
+        <Link to="/endereco">
+          <button>Endereço</button>
+        </Link>
       </div>
     </nav>
   );
