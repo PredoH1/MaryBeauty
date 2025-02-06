@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Header from "../../Components/Header/index";
 import Sobre from "../../Components/Sobre";
 import React, { useRef } from "react";
