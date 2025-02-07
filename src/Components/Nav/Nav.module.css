@@ -67,6 +67,7 @@ nav {
   nav {
     flex-direction: column;
     justify-content: center;
+    border: none;
   }
 
   .logo {
