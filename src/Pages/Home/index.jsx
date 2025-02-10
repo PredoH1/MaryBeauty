@@ -6,13 +6,14 @@ import Catalogo from "../../Components/Catalogo";
 
 function Home() {
   const sobreRef = useRef(null);
+  const catalogRef = useRef(null);
 
   return (
     <div>
-      <Nav sobreRef={sobreRef} />
+      <Nav sobreRef={sobreRef} catalogRef={catalogRef} />
       <Header />
       <Sobre ref={sobreRef} />
-      <Catalogo />
+      <Catalogo ref={catalogRef} />
     </div>
   );
 }

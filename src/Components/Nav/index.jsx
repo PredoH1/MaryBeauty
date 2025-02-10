@@ -2,10 +2,16 @@ import { Link } from "react-router-dom";
 import style from "../../Components/Nav/Nav.module.css";
 import iconNav from "../../assets/iconNav.png";
 
-function Nav({ sobreRef }) {
+function Nav({ sobreRef, catalogRef }) {
   function handleScroll() {
     if (sobreRef.current) {
       sobreRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  function handleScrollCat() {
+    if (catalogRef.current) {
+      catalogRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }
 
@@ -27,8 +33,8 @@ function Nav({ sobreRef }) {
         <a>
           <button onClick={handleScroll}>Sobre</button>
         </a>
-        <a href="#">
-          <button>Catalogo</button>
+        <a>
+          <button onClick={handleScrollCat}>Catalogo</button>
         </a>
         <Link to="/endereco">
           <button>Endereço</button>

@@ -38,7 +38,20 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  .titleCatalogo {
+    padding-top: 2rem;
+  }
+
+  .boxCatalogo {
+    width: 90%;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+
   .service {
-    width: 100%; /* 1 card por linha */
+    width: 100%;
   }
 }

@@ -1,8 +1,9 @@
 import style from "../../Components/Catalogo/Catalogo.module.css";
+import React, { useEffect, useRef, forwardRef } from "react";
 
-function Catalogo() {
+function Catalogo(props, ref) {
   return (
-    <section className={style.container}>
+    <section ref={ref} className={style.container}>
       <div className={style.titleCatalogo}>
         <h2>Conheca nosso catalogo</h2>
       </div>
@@ -35,4 +36,4 @@ function Catalogo() {
   );
 }
 
-export default Catalogo;
+export default forwardRef(Catalogo);

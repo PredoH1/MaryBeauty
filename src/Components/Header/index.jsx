@@ -1,12 +1,14 @@
 import style from "../../Components/Header/Header.module.css";
-import imgHeader from "../../assets/imgHeader.png";
 import React, { useEffect, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 
 function Header() {
   const titleRef = useRef(null);
   const paragraphRef = useRef(null);
-  const imgRef = useRef(null);
+
+  function abrirCertificado() {
+    window.open("/Certificado.pdf", "_blank");
+  }
 
   useEffect(() => {
     gsap.fromTo(
@@ -18,11 +20,6 @@ function Header() {
         paragraphRef.current, // Seleciona o <p>
         { x: -700, opacity: 0 }, // Vem da esquerda e invisível
         { x: 0, opacity: 1, duration: 3, ease: "power3.out" } // Chega mais rápido que o título
-      ),
-      gsap.fromTo(
-        imgRef.current, // Seleciona o <p>
-        { x: 300, opacity: 0 }, // Vem da esquerda e invisível
-        { x: 0, opacity: 1, duration: 1.5, ease: "power3.out" } // Chega mais rápido que o título
       );
   }, []);
 
@@ -37,9 +34,9 @@ function Header() {
             Ofereço extensão e cuidados com cílios, garantindo alongamentos
             naturais, volumosos e duradouros com precisão e qualidade
           </p>
-        </div>
-        <div className={style.boxImg}>
-          <img ref={imgRef} src={imgHeader} alt="" />
+          <button className={style.button} onClick={abrirCertificado}>
+            Ver meu certificado
+          </button>
         </div>
       </section>
     </section>

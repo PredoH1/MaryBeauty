@@ -67,6 +67,7 @@ nav {
   nav {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: none;
   }
 
@@ -85,7 +86,6 @@ nav {
   .links {
     justify-content: center;
     flex-wrap: wrap;
-
     width: 100%;
   }
 
