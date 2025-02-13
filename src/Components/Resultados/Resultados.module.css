@@ -84,3 +84,42 @@
   object-position: left bottom;
   transform: scale(1);
 }
+
+@media (max-width: 768px) {
+  .container h1 {
+    width: 91%;
+  }
+  .boxRight,
+  .boxLeft {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .descRight,
+  .descLeft {
+    width: 95%;
+    margin: 0.7rem 0rem 0.7rem 0rem;
+  }
+
+  .descRight h2,
+  .descLeft h2 {
+    font-size: 1.5rem;
+  }
+
+  .descRight p,
+  .descLeft p {
+    font-size: 1.1rem;
+    width: 95%;
+  }
+
+  .imgRight,
+  .imgLeft {
+    width: 95%;
+    height: 100%;
+  }
+
+  .imgRight img,
+  .imgLeft img {
+    height: 18rem;
+  }
+}
