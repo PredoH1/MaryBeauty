@@ -6,8 +6,28 @@
   align-items: center;
 }
 
+.container h1 {
+  text-align: center;
+  width: 84%;
+  color: #fff;
+  font-family: "Ubuntu", serif;
+  font-size: 1.5rem;
+  border-top: 0.5px solid #d4af37;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.boxRight {
+  background-color: #080808;
+}
+
+.boxLeft {
+  background-color: #251230;
+}
+
 .boxRight,
 .boxLeft {
+  font-family: "Ubuntu", serif;
+  border-radius: 0.3rem;
   margin: 1rem 0rem 1rem 0rem;
   width: 99%;
   height: 70vh; /* Agora ambas têm a mesma altura */
@@ -18,7 +38,34 @@
 
 .descRight,
 .descLeft {
-  width: 50%;
+  background: #d9d9d917;
+  border: 1px solid #c5c5c5;
+  border-radius: 0.3rem;
+  width: 49%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.descRight h2,
+.descLeft h2 {
+  font-size: 2rem;
+}
+
+.descRight p,
+.descLeft p {
+  font-size: 1.2rem;
+  margin: 1.2rem 0rem 1.2rem 0rem;
+  text-align: justify;
+}
+
+.descRight span,
+.descLeft span {
+  color: #d4af37;
+  font-weight: bold;
 }
 
 .imgRight,
@@ -30,6 +77,7 @@
 
 .imgRight img,
 .imgLeft img {
+  border-radius: 0.3rem;
   width: 100%;
   height: 100%; /* Agora as imagens se ajustam corretamente */
   object-fit: cover;
