@@ -9,7 +9,7 @@ import catVolume3d from "../../assets/catVolume3d.jpg";
 import catVolume4d from "../../assets/catVolume4d.jpg";
 import catVolume5d from "../../assets/catVolume5d.jpg";
 import catVolume6d from "../../assets/catVolume6d.jpg";
-import catEfeitoMolhado from "../../assets/catefeitoMolhado.jpg";
+import catEfeitoMolhado from "../../assets/catEfeitoMolhado.jpg";
 
 function Catalogo(props, ref) {
   return (

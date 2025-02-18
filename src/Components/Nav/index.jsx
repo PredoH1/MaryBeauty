@@ -36,9 +36,9 @@ function Nav({ sobreRef, catalogRef }) {
         <a>
           <button onClick={handleScrollCat}>Catalogo</button>
         </a>
-        <Link to="/endereco">
+        <a>
           <button>Endereço</button>
-        </Link>
+        </a>
       </div>
     </nav>
   );
