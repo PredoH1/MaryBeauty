@@ -84,6 +84,13 @@
   background-color: #ffffff00; /* Fundo branco para evitar buracos visuais */
 }
 
+.socialMedia {
+  width: 100%;
+  border: 1px solid red;
+  color: #fff;
+  font-family: "Ubuntu", serif;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .container {

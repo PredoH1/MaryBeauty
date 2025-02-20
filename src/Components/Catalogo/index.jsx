@@ -11,6 +11,8 @@ import catVolume5d from "../../assets/catVolume5d.jpg";
 import catVolume6d from "../../assets/catVolume6d.jpg";
 import catEfeitoMolhado from "../../assets/catEfeitoMolhado.jpg";
 import iconCatalogo from "../../assets/iconCatalogo.svg";
+import instagram from "../../assets/instagram.svg";
+import whatsapp from "../../assets/whatsapp.svg";
 
 function Catalogo(props, ref) {
   return (
@@ -106,6 +108,24 @@ function Catalogo(props, ref) {
           </div>
 
           <img className={style.imgCat} src={catEfeitoMolhado} alt="" />
+        </div>
+      </div>
+      <div className={style.socialMedia}>
+        <h3>
+          Gostou de algum dos nossos serviços? Não perca tempo! Entre em contato
+          agora mesmo e tire todas as suas dúvidas.
+        </h3>
+        <div>
+          <a
+            href="https://www.instagram.com/marybeauty_25?igsh=MWQwYmIwZW81ZWR5cA=="
+            target="_blank"
+          >
+            <img src={instagram} alt="" />
+          </a>
+
+          <a href="https://wa.me/5562993513317" target="_blank">
+            <img src={whatsapp} alt="" />
+          </a>
         </div>
       </div>
     </section>
