@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import Nav from "../../Components/Nav";
 import Catalogo from "../../Components/Catalogo";
 import Resultados from "../../Components/Resultados";
+import Endereco from "../../Components/Endereco";
 
 function Home() {
   const sobreRef = useRef(null);
@@ -15,6 +16,7 @@ function Home() {
       <Header />
       <Sobre ref={sobreRef} />
       <Catalogo ref={catalogRef} />
+      <Endereco />
       <Resultados />
     </div>
   );

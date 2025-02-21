@@ -1,0 +1,54 @@
+.container {
+  background-color: #1d0e26;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Ubuntu", serif;
+}
+
+.boxInfoLoc {
+  color: #fff;
+  text-align: justify;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxInfoLoc p {
+  margin-top: 1.2rem;
+}
+
+.boxInfoLoc img {
+  width: 300px;
+  height: 300px;
+}
+
+.boxLoc {
+  border-radius: 1rem;
+}
+
+.boxLoc iframe {
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .boxLoc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .boxLoc iframe {
+    width: 95%;
+    height: 350px;
+  }
+}

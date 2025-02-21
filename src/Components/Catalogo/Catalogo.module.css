@@ -78,10 +78,10 @@
 /* Correção do tamanho das imagens sem cortar excessivamente */
 .imgCat {
   width: 100%;
-  height: 250px; /* Mantém um tamanho uniforme */
-  object-fit: contain; /* Mantém a imagem inteira sem cortes */
+  height: 250px;
+  object-fit: contain;
   border-radius: 0 0 8px 8px;
-  background-color: #ffffff00; /* Fundo branco para evitar buracos visuais */
+  background-color: #ffffff00;
 }
 
 .socialMedia {
