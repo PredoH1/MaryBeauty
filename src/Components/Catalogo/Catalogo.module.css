@@ -86,9 +86,90 @@
 
 .socialMedia {
   width: 100%;
-  border: 1px solid red;
   color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-family: "Ubuntu", serif;
+}
+
+.infoFaleConosco h3 {
+  font-family: "Ubuntu", serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoFaleConosco div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.infoFaleConosco a {
+  text-decoration: none;
+}
+
+.infoFaleConosco button {
+  border: none;
+  color: #fff;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.instagramButton {
+  background: linear-gradient(
+    30deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+}
+
+.whatsappButton {
+  background: linear-gradient(30deg, #25d366, #128c7e);
+}
+
+.infoFaleConosco button p {
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.infoFaleConosco button img {
+  width: 24px;
+  height: 24px;
+}
+
+.infoFaleConosco button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #d4af37;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
 }
 
 /* Responsividade */
@@ -113,5 +194,33 @@
   .imgCat {
     width: 100%;
     height: 200px;
+  }
+
+  .socialMedia {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .infoFaleConosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoFaleConosco div {
+    margin-bottom: 2rem;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .infoFaleConosco button {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
   }
 }

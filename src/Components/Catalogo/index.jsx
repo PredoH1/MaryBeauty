@@ -13,6 +13,7 @@ import catEfeitoMolhado from "../../assets/catEfeitoMolhado.jpg";
 import iconCatalogo from "../../assets/iconCatalogo.svg";
 import instagram from "../../assets/instagram.svg";
 import whatsapp from "../../assets/whatsapp.svg";
+import iconFaleConosco from "../../assets/iconFaleConosco.png";
 
 function Catalogo(props, ref) {
   return (
@@ -111,21 +112,35 @@ function Catalogo(props, ref) {
         </div>
       </div>
       <div className={style.socialMedia}>
-        <h3>
-          Gostou de algum dos nossos serviços? Não perca tempo! Entre em contato
-          agora mesmo e tire todas as suas dúvidas.
-        </h3>
-        <div>
-          <a
-            href="https://www.instagram.com/marybeauty_25?igsh=MWQwYmIwZW81ZWR5cA=="
-            target="_blank"
-          >
-            <img src={instagram} alt="" />
-          </a>
+        <div className={style.boxImg}>
+          <img src={iconFaleConosco} alt="" />
+        </div>
+        <div className={style.infoFaleConosco}>
+          <h3>Gostou de algum dos nossos serviços?</h3>
+          <h3>
+            Não perca tempo! Entre em contato agora mesmo e tire todas as suas
+            dúvidas.
+          </h3>
+          <div>
+            <a
+              href="https://www.instagram.com/marybeauty_25?igsh=MWQwYmIwZW81ZWR5cA=="
+              target="_blank"
+            >
+              <button className={style.instagramButton}>
+                <p>Nosso Instagram</p>
 
-          <a href="https://wa.me/5562993513317" target="_blank">
-            <img src={whatsapp} alt="" />
-          </a>
+                <img src={instagram} alt="" />
+              </button>
+            </a>
+
+            <a href="https://wa.me/5562993513317" target="_blank">
+              <button className={style.whatsappButton}>
+                <p>Nosso WhatsApp</p>
+
+                <img src={whatsapp} alt="" />
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
