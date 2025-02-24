@@ -9,14 +9,19 @@ import Endereco from "../../Components/Endereco";
 function Home() {
   const sobreRef = useRef(null);
   const catalogRef = useRef(null);
+  const enderecoRef = useRef(null);
 
   return (
     <div>
-      <Nav sobreRef={sobreRef} catalogRef={catalogRef} />
+      <Nav
+        sobreRef={sobreRef}
+        catalogRef={catalogRef}
+        enderecoRef={enderecoRef}
+      />
       <Header />
       <Sobre ref={sobreRef} />
       <Catalogo ref={catalogRef} />
-      <Endereco />
+      <Endereco ref={enderecoRef} />
       <Resultados />
     </div>
   );

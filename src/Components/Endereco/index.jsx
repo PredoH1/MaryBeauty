@@ -1,9 +1,10 @@
 import style from "../../Components/Endereco/Endereco.module.css";
 import imgLocalizacao from "../../assets/imgLocalizacao.png";
+import React, { useEffect, useRef, forwardRef } from "react";
 
-function Endereco() {
+function Endereco(props, ref) {
   return (
-    <section className={style.container}>
+    <section ref={ref} className={style.container}>
       <div className={style.boxInfoLoc}>
         <h3>
           Nosso time está pronto para te atender pessoalmente! Visite-nos!
@@ -26,4 +27,4 @@ function Endereco() {
   );
 }
 
-export default Endereco;
+export default forwardRef(Endereco);
