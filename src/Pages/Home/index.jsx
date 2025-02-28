@@ -5,7 +5,7 @@ import Nav from "../../Components/Nav";
 import Catalogo from "../../Components/Catalogo";
 import Resultados from "../../Components/Resultados";
 import Endereco from "../../Components/Endereco";
-import Footer from "../../Components/Footer/Index";
+import Footer from "../../Components/Footer";
 
 function Home() {
   const sobreRef = useRef(null);
