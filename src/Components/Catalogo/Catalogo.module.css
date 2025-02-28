@@ -208,6 +208,10 @@
     align-items: center;
   }
 
+  .infoFaleConosco h3 {
+    padding: 1.2rem;
+  }
+
   .infoFaleConosco div {
     margin-bottom: 2rem;
     flex-direction: column;

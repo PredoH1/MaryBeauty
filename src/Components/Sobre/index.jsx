@@ -18,9 +18,9 @@ function Sobre(props, ref) {
       {
         x: 0,
         opacity: 1,
-        duration: 1.2,
+        duration: 1.5,
         ease: "power3.out",
-        stagger: 0.3,
+        stagger: 0.4,
         scrollTrigger: {
           trigger: ".cards-container",
           start: "top top",
