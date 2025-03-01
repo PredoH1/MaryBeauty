@@ -35,7 +35,7 @@ function Header() {
             naturais, volumosos e duradouros com precisão e qualidade
           </p>
           <button className={style.button} onClick={abrirCertificado}>
-            Ver meu certificado
+            Acessar meu certificado
           </button>
         </div>
       </section>

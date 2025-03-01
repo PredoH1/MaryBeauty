@@ -1,5 +1,6 @@
 import style from "../../Components/Catalogo/Catalogo.module.css";
 import React, { useEffect, useRef, forwardRef } from "react";
+import { gsap } from "gsap";
 import catClassico from "../../assets/catClassico.jpg";
 import catEfeitoRimel from "../../assets/catEfeitoRimel.jpg";
 import catFoxBrasileiro from "../../assets/catFoxBrasileiro.jpg";
@@ -16,10 +17,20 @@ import whatsapp from "../../assets/whatsapp.svg";
 import iconFaleConosco from "../../assets/iconFaleConosco.png";
 
 function Catalogo(props, ref) {
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      titleRef.current,
+      { x: -700 }, // Começa deslocado para a esquerda
+      { x: 0, duration: 2.7, ease: "power3.out" } // Move suavemente para a posição original
+    );
+  }, []);
+
   return (
     <section ref={ref} className={style.container}>
       <div className={style.titleCatalogo}>
-        <h2>Conheca nosso catalogo</h2>
+        <h2 ref={titleRef}>Conheca nosso catalogo</h2>
       </div>
       <div className={style.boxCatalogo}>
         <div className={style.service}>

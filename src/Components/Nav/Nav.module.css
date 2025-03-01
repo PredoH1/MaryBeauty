@@ -86,7 +86,6 @@ nav {
     height: 4rem;
   }
 
-  /* Centralizando o ícone do menu hamburguer */
   .menuIcon {
     display: block;
     font-size: 2rem;
@@ -95,19 +94,18 @@ nav {
     color: #d4af37;
     cursor: pointer;
     position: absolute;
-    top: 8rem; /* Ajuste o valor conforme necessário */
+    top: 8rem;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  /* Esconde os links por padrão */
   .links {
     position: fixed;
     z-index: 1000;
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 11rem; /* Deixe o menu abaixo do ícone hamburguer */
+    top: 11rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fdcbca;
@@ -117,7 +115,6 @@ nav {
     border-top: 1px solid #d4af37;
   }
 
-  /* Ativa o menu quando aberto */
   .links.active {
     display: flex;
   }

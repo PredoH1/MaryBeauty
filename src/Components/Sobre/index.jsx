@@ -25,7 +25,7 @@ function Sobre(props, ref) {
           trigger: ".cards-container",
           start: "top top",
           end: "bottom top",
-          toggleActions: "play none none none",
+          toggleActions: "play reverse play reverse",
           markers: false,
           scrub: false,
         },
@@ -35,11 +35,13 @@ function Sobre(props, ref) {
 
   return (
     <section className={style.sectionSobre}>
-      <div className={style.titleSobre}>
-        <h1>entregamos mais do que apenas extensão de cílios</h1>
+      <div ref={ref} className={style.titleSobre}>
+        <h1 ref={(el) => (cardsRef.current[0] = el)}>
+          Entregamos mais do que apenas extensão de cílios
+        </h1>
       </div>
       <section ref={ref} className={style.sectionCard}>
-        <div ref={(el) => (cardsRef.current[0] = el)} className={style.cards}>
+        <div ref={(el) => (cardsRef.current[1] = el)} className={style.cards}>
           <img src={brushIcon} alt="" />
           <h2>Personalização</h2>
           <p>
@@ -47,15 +49,15 @@ function Sobre(props, ref) {
             e ao estilo desejado.
           </p>
         </div>
-        <div ref={(el) => (cardsRef.current[1] = el)} className={style.cards}>
+        <div ref={(el) => (cardsRef.current[2] = el)} className={style.cards}>
           <img src={diamondIcon} alt="" />
           <h2>Qualidade e Durabilidade</h2>
           <p>
-            Você utiliza materiais de alta qualidade para garantir fios leves,
+            Utilizamos materiais de alta qualidade para garantir fios leves,
             volumosos e de longa duração
           </p>
         </div>
-        <div ref={(el) => (cardsRef.current[2] = el)} className={style.cards}>
+        <div ref={(el) => (cardsRef.current[3] = el)} className={style.cards}>
           <img src={eyelashIcon} alt="" />
           <h2>Cuidados Especiais</h2>
           <p>
